@@ -1,0 +1,8 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+<h3>Thank you for your business!</h3>
+<p>We charged your credit card for {{request.session.cobro}}$</p>
+<p>You have ordered # {{items}} items so far and spent {{total}} $$ with Amadon.com!</p>
+<p><a href="/">Go Back</a></p>
+{% endblock %}
